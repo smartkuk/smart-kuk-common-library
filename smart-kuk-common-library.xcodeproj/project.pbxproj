@@ -10,6 +10,9 @@
 		C3A3D3F22037C3140076EC6E /* smart_kuk_common_library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A3D3E82037C3140076EC6E /* smart_kuk_common_library.framework */; };
 		C3A3D3F72037C3140076EC6E /* smart_kuk_common_libraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3D3F62037C3140076EC6E /* smart_kuk_common_libraryTests.swift */; };
 		C3A3D3F92037C3140076EC6E /* smart_kuk_common_library.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A3D3EB2037C3140076EC6E /* smart_kuk_common_library.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A3D4042037C45E0076EC6E /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3D4032037C45E0076EC6E /* DateExtensions.swift */; };
+		C3A3D4062037C4C10076EC6E /* DateExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3D4052037C4C10076EC6E /* DateExtensionsTest.swift */; };
+		C3A3D4092037C57F0076EC6E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3D4082037C57F0076EC6E /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		C3A3D3F12037C3140076EC6E /* smart-kuk-common-libraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "smart-kuk-common-libraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A3D3F62037C3140076EC6E /* smart_kuk_common_libraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smart_kuk_common_libraryTests.swift; sourceTree = "<group>"; };
 		C3A3D3F82037C3140076EC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3A3D4032037C45E0076EC6E /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		C3A3D4052037C4C10076EC6E /* DateExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTest.swift; sourceTree = "<group>"; };
+		C3A3D4082037C57F0076EC6E /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		C3A3D3EA2037C3140076EC6E /* smart-kuk-common-library */ = {
 			isa = PBXGroup;
 			children = (
+				C3A3D4022037C4470076EC6E /* Extensions */,
 				C3A3D3EB2037C3140076EC6E /* smart_kuk_common_library.h */,
 				C3A3D3EC2037C3140076EC6E /* Info.plist */,
 			);
@@ -80,10 +87,28 @@
 		C3A3D3F52037C3140076EC6E /* smart-kuk-common-libraryTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3A3D4072037C5610076EC6E /* Extensions */,
 				C3A3D3F62037C3140076EC6E /* smart_kuk_common_libraryTests.swift */,
 				C3A3D3F82037C3140076EC6E /* Info.plist */,
 			);
 			path = "smart-kuk-common-libraryTests";
+			sourceTree = "<group>";
+		};
+		C3A3D4022037C4470076EC6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3A3D4032037C45E0076EC6E /* DateExtensions.swift */,
+				C3A3D4082037C57F0076EC6E /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3A3D4072037C5610076EC6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3A3D4052037C4C10076EC6E /* DateExtensionsTest.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +173,7 @@
 				TargetAttributes = {
 					C3A3D3E72037C3140076EC6E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					C3A3D3F02037C3140076EC6E = {
@@ -196,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A3D4092037C57F0076EC6E /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A3D4062037C4C10076EC6E /* DateExtensionsTest.swift in Sources */,
 				C3A3D3F72037C3140076EC6E /* smart_kuk_common_libraryTests.swift in Sources */,
+				C3A3D4042037C45E0076EC6E /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +363,7 @@
 		C3A3D3FD2037C3140076EC6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SmartKuk.SmartCompany.smart-kuk-common-library";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +386,7 @@
 		C3A3D3FE2037C3140076EC6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +408,7 @@
 		C3A3D4002037C3140076EC6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GLTDQRSPV;
 				INFOPLIST_FILE = "smart-kuk-common-libraryTests/Info.plist";
@@ -390,6 +423,7 @@
 		C3A3D4012037C3140076EC6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GLTDQRSPV;
 				INFOPLIST_FILE = "smart-kuk-common-libraryTests/Info.plist";
